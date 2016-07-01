@@ -24,3 +24,6 @@ stack clean
 { time stack build ; } 2> "$RESOLVER2-timing.txt"
 
 stack clean && rm stack.yaml
+
+cp "$RESOLVER1-timing.txt" ../..
+cp "$RESOLVER2-timing.txt" ../..
