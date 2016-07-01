@@ -27,3 +27,5 @@ stack clean && rm stack.yaml
 
 cp "$RESOLVER1-timing.txt" ../..
 cp "$RESOLVER2-timing.txt" ../..
+
+tail -n 3 *timing*
