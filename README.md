@@ -24,7 +24,8 @@ ie. ghc-7.10 vs ghc-8.0.1.
   - Modify stack.yaml to specify the GHC version
   - Run a stack build once to download and build the dependencies (we don't want to profile network performance after all...)
   - Run a stack clean
-  - Run a stack build again and collect timing results (in detail with extra GHC options if possible).
+  - Run a stack test and make sure it succeeds
+  - Run a stack build again and collect timing results (in detail with extra GHC: -dshow-passes - see: https://ghc.haskell.org/trac/ghc/ticket/11653).
 - Collate results.csv from the timing outputs above.
 
 If possible this should capture timings for specific compiler passes etc.
